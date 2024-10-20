@@ -1,0 +1,251 @@
+/* Color Tokens Light Theme */
+:root,
+:root[data-theme='light'] {
+  --aiforge-elements-borderColor: theme('colors.alpha.gray.10');
+  --aiforge-elements-borderColorActive: theme('colors.accent.600');
+
+  --aiforge-elements-bg-depth-1: theme('colors.white');
+  --aiforge-elements-bg-depth-2: theme('colors.gray.50');
+  --aiforge-elements-bg-depth-3: theme('colors.gray.200');
+  --aiforge-elements-bg-depth-4: theme('colors.alpha.gray.5');
+
+  --aiforge-elements-textPrimary: theme('colors.gray.950');
+  --aiforge-elements-textSecondary: theme('colors.gray.600');
+  --aiforge-elements-textTertiary: theme('colors.gray.500');
+
+  --aiforge-elements-code-background: theme('colors.gray.100');
+  --aiforge-elements-code-text: theme('colors.gray.950');
+
+  --aiforge-elements-button-primary-background: theme('colors.alpha.accent.10');
+  --aiforge-elements-button-primary-backgroundHover: theme('colors.alpha.accent.20');
+  --aiforge-elements-button-primary-text: theme('colors.accent.500');
+
+  --aiforge-elements-button-secondary-background: theme('colors.alpha.gray.5');
+  --aiforge-elements-button-secondary-backgroundHover: theme('colors.alpha.gray.10');
+  --aiforge-elements-button-secondary-text: theme('colors.gray.950');
+
+  --aiforge-elements-button-danger-background: theme('colors.alpha.red.10');
+  --aiforge-elements-button-danger-backgroundHover: theme('colors.alpha.red.20');
+  --aiforge-elements-button-danger-text: theme('colors.red.500');
+
+  --aiforge-elements-item-contentDefault: theme('colors.alpha.gray.50');
+  --aiforge-elements-item-contentActive: theme('colors.gray.950');
+  --aiforge-elements-item-contentAccent: theme('colors.accent.700');
+  --aiforge-elements-item-contentDanger: theme('colors.red.500');
+  --aiforge-elements-item-backgroundDefault: rgba(0, 0, 0, 0);
+  --aiforge-elements-item-backgroundActive: theme('colors.alpha.gray.5');
+  --aiforge-elements-item-backgroundAccent: theme('colors.alpha.accent.10');
+  --aiforge-elements-item-backgroundDanger: theme('colors.alpha.red.10');
+
+  --aiforge-elements-loader-background: theme('colors.alpha.gray.10');
+  --aiforge-elements-loader-progress: theme('colors.accent.500');
+
+  --aiforge-elements-artifacts-background: theme('colors.white');
+  --aiforge-elements-artifacts-backgroundHover: theme('colors.alpha.gray.2');
+  --aiforge-elements-artifacts-borderColor: var(--aiforge-elements-borderColor);
+  --aiforge-elements-artifacts-inlineCode-background: theme('colors.gray.100');
+  --aiforge-elements-artifacts-inlineCode-text: var(--aiforge-elements-textPrimary);
+
+  --aiforge-elements-actions-background: theme('colors.white');
+  --aiforge-elements-actions-code-background: theme('colors.gray.800');
+
+  --aiforge-elements-messages-background: theme('colors.gray.100');
+  --aiforge-elements-messages-linkColor: theme('colors.accent.500');
+  --aiforge-elements-messages-code-background: theme('colors.gray.800');
+  --aiforge-elements-messages-inlineCode-background: theme('colors.gray.200');
+  --aiforge-elements-messages-inlineCode-text: theme('colors.gray.800');
+
+  --aiforge-elements-icon-success: theme('colors.green.500');
+  --aiforge-elements-icon-error: theme('colors.red.500');
+  --aiforge-elements-icon-primary: theme('colors.gray.950');
+  --aiforge-elements-icon-secondary: theme('colors.gray.600');
+  --aiforge-elements-icon-tertiary: theme('colors.gray.500');
+
+  --aiforge-elements-dividerColor: theme('colors.gray.100');
+
+  --aiforge-elements-prompt-background: theme('colors.alpha.white.80');
+
+  --aiforge-elements-sidebar-dropdownShadow: theme('colors.alpha.gray.10');
+  --aiforge-elements-sidebar-buttonBackgroundDefault: theme('colors.alpha.accent.10');
+  --aiforge-elements-sidebar-buttonBackgroundHover: theme('colors.alpha.accent.20');
+  --aiforge-elements-sidebar-buttonText: theme('colors.accent.700');
+
+  --aiforge-elements-preview-addressBar-background: theme('colors.gray.100');
+  --aiforge-elements-preview-addressBar-backgroundHover: theme('colors.alpha.gray.5');
+  --aiforge-elements-preview-addressBar-backgroundActive: theme('colors.white');
+  --aiforge-elements-preview-addressBar-text: var(--aiforge-elements-textSecondary);
+  --aiforge-elements-preview-addressBar-textActive: var(--aiforge-elements-textPrimary);
+
+  --aiforge-elements-terminals-background: theme('colors.white');
+  --aiforge-elements-terminals-buttonBackground: var(--aiforge-elements-bg-depth-4);
+
+  --aiforge-elements-cta-background: theme('colors.gray.100');
+  --aiforge-elements-cta-text: theme('colors.gray.950');
+
+  /* Terminal Colors */
+  --aiforge-terminal-background: var(--aiforge-elements-terminals-background);
+  --aiforge-terminal-foreground: #333333;
+  --aiforge-terminal-selection-background: #00000040;
+  --aiforge-terminal-black: #000000;
+  --aiforge-terminal-red: #cd3131;
+  --aiforge-terminal-green: #00bc00;
+  --aiforge-terminal-yellow: #949800;
+  --aiforge-terminal-blue: #0451a5;
+  --aiforge-terminal-magenta: #bc05bc;
+  --aiforge-terminal-cyan: #0598bc;
+  --aiforge-terminal-white: #555555;
+  --aiforge-terminal-brightBlack: #686868;
+  --aiforge-terminal-brightRed: #cd3131;
+  --aiforge-terminal-brightGreen: #00bc00;
+  --aiforge-terminal-brightYellow: #949800;
+  --aiforge-terminal-brightBlue: #0451a5;
+  --aiforge-terminal-brightMagenta: #bc05bc;
+  --aiforge-terminal-brightCyan: #0598bc;
+  --aiforge-terminal-brightWhite: #a5a5a5;
+}
+
+/* Color Tokens Dark Theme */
+:root,
+:root[data-theme='dark'] {
+  --aiforge-elements-borderColor: theme('colors.alpha.white.10');
+  --aiforge-elements-borderColorActive: theme('colors.accent.500');
+
+  --aiforge-elements-bg-depth-1: theme('colors.gray.950');
+  --aiforge-elements-bg-depth-2: theme('colors.gray.900');
+  --aiforge-elements-bg-depth-3: theme('colors.gray.800');
+  --aiforge-elements-bg-depth-4: theme('colors.alpha.white.5');
+
+  --aiforge-elements-textPrimary: theme('colors.white');
+  --aiforge-elements-textSecondary: theme('colors.gray.400');
+  --aiforge-elements-textTertiary: theme('colors.gray.500');
+
+  --aiforge-elements-code-background: theme('colors.gray.800');
+  --aiforge-elements-code-text: theme('colors.white');
+
+  --aiforge-elements-button-primary-background: theme('colors.alpha.accent.10');
+  --aiforge-elements-button-primary-backgroundHover: theme('colors.alpha.accent.20');
+  --aiforge-elements-button-primary-text: theme('colors.accent.500');
+
+  --aiforge-elements-button-secondary-background: theme('colors.alpha.white.5');
+  --aiforge-elements-button-secondary-backgroundHover: theme('colors.alpha.white.10');
+  --aiforge-elements-button-secondary-text: theme('colors.white');
+
+  --aiforge-elements-button-danger-background: theme('colors.alpha.red.10');
+  --aiforge-elements-button-danger-backgroundHover: theme('colors.alpha.red.20');
+  --aiforge-elements-button-danger-text: theme('colors.red.500');
+
+  --aiforge-elements-item-contentDefault: theme('colors.alpha.white.50');
+  --aiforge-elements-item-contentActive: theme('colors.white');
+  --aiforge-elements-item-contentAccent: theme('colors.accent.500');
+  --aiforge-elements-item-contentDanger: theme('colors.red.500');
+  --aiforge-elements-item-backgroundDefault: rgba(255, 255, 255, 0);
+  --aiforge-elements-item-backgroundActive: theme('colors.alpha.white.10');
+  --aiforge-elements-item-backgroundAccent: theme('colors.alpha.accent.10');
+  --aiforge-elements-item-backgroundDanger: theme('colors.alpha.red.10');
+
+  --aiforge-elements-loader-background: theme('colors.alpha.gray.10');
+  --aiforge-elements-loader-progress: theme('colors.accent.500');
+
+  --aiforge-elements-artifacts-background: theme('colors.gray.900');
+  --aiforge-elements-artifacts-backgroundHover: theme('colors.alpha.white.5');
+  --aiforge-elements-artifacts-borderColor: var(--aiforge-elements-borderColor);
+  --aiforge-elements-artifacts-inlineCode-background: theme('colors.gray.800');
+  --aiforge-elements-artifacts-inlineCode-text: theme('colors.white');
+
+  --aiforge-elements-actions-background: theme('colors.gray.900');
+  --aiforge-elements-actions-code-background: theme('colors.gray.800');
+
+  --aiforge-elements-messages-background: theme('colors.gray.800');
+  --aiforge-elements-messages-linkColor: theme('colors.accent.500');
+  --aiforge-elements-messages-code-background: theme('colors.gray.900');
+  --aiforge-elements-messages-inlineCode-background: theme('colors.gray.700');
+  --aiforge-elements-messages-inlineCode-text: var(--aiforge-elements-textPrimary);
+
+  --aiforge-elements-icon-success: theme('colors.green.400');
+  --aiforge-elements-icon-error: theme('colors.red.400');
+  --aiforge-elements-icon-primary: theme('colors.gray.950');
+  --aiforge-elements-icon-secondary: theme('colors.gray.600');
+  --aiforge-elements-icon-tertiary: theme('colors.gray.500');
+
+  --aiforge-elements-dividerColor: theme('colors.gray.100');
+
+  --aiforge-elements-prompt-background: theme('colors.alpha.gray.80');
+
+  --aiforge-elements-sidebar-dropdownShadow: theme('colors.alpha.gray.30');
+  --aiforge-elements-sidebar-buttonBackgroundDefault: theme('colors.alpha.accent.10');
+  --aiforge-elements-sidebar-buttonBackgroundHover: theme('colors.alpha.accent.20');
+  --aiforge-elements-sidebar-buttonText: theme('colors.accent.500');
+
+  --aiforge-elements-preview-addressBar-background: var(--aiforge-elements-bg-depth-1);
+  --aiforge-elements-preview-addressBar-backgroundHover: theme('colors.alpha.white.5');
+  --aiforge-elements-preview-addressBar-backgroundActive: var(--aiforge-elements-bg-depth-1);
+  --aiforge-elements-preview-addressBar-text: var(--aiforge-elements-textSecondary);
+  --aiforge-elements-preview-addressBar-textActive: var(--aiforge-elements-textPrimary);
+
+  --aiforge-elements-terminals-background: var(--aiforge-elements-bg-depth-1);
+  --aiforge-elements-terminals-buttonBackground: var(--aiforge-elements-bg-depth-3);
+
+  --aiforge-elements-cta-background: theme('colors.alpha.white.10');
+  --aiforge-elements-cta-text: theme('colors.white');
+
+  /* Terminal Colors */
+  --aiforge-terminal-background: var(--aiforge-elements-terminals-background);
+  --aiforge-terminal-foreground: #eff0eb;
+  --aiforge-terminal-selection-background: #97979b33;
+  --aiforge-terminal-black: #000000;
+  --aiforge-terminal-red: #ff5c57;
+  --aiforge-terminal-green: #5af78e;
+  --aiforge-terminal-yellow: #f3f99d;
+  --aiforge-terminal-blue: #57c7ff;
+  --aiforge-terminal-magenta: #ff6ac1;
+  --aiforge-terminal-cyan: #9aedfe;
+  --aiforge-terminal-white: #f1f1f0;
+  --aiforge-terminal-brightBlack: #686868;
+  --aiforge-terminal-brightRed: #ff5c57;
+  --aiforge-terminal-brightGreen: #5af78e;
+  --aiforge-terminal-brightYellow: #f3f99d;
+  --aiforge-terminal-brightBlue: #57c7ff;
+  --aiforge-terminal-brightMagenta: #ff6ac1;
+  --aiforge-terminal-brightCyan: #9aedfe;
+  --aiforge-terminal-brightWhite: #f1f1f0;
+}
+
+/*
+ * Element Tokens
+ *
+ * Hierarchy: Element Token -> (Element Token | Color Tokens) -> Primitives
+ */
+:root {
+  --header-height: 54px;
+  --chat-max-width: 37rem;
+  --chat-min-width: 640px;
+  --workbench-width: min(calc(100% - var(--chat-min-width)), 1536px);
+  --workbench-inner-width: var(--workbench-width);
+  --workbench-left: calc(100% - var(--workbench-width));
+
+  /* Toasts */
+  --toastify-color-progress-success: var(--aiforge-elements-icon-success);
+  --toastify-color-progress-error: var(--aiforge-elements-icon-error);
+
+  /* Terminal */
+  --aiforge-elements-terminal-backgroundColor: var(--aiforge-terminal-background);
+  --aiforge-elements-terminal-textColor: var(--aiforge-terminal-foreground);
+  --aiforge-elements-terminal-cursorColor: var(--aiforge-terminal-foreground);
+  --aiforge-elements-terminal-selection-backgroundColor: var(--aiforge-terminal-selection-background);
+  --aiforge-elements-terminal-color-black: var(--aiforge-terminal-black);
+  --aiforge-elements-terminal-color-red: var(--aiforge-terminal-red);
+  --aiforge-elements-terminal-color-green: var(--aiforge-terminal-green);
+  --aiforge-elements-terminal-color-yellow: var(--aiforge-terminal-yellow);
+  --aiforge-elements-terminal-color-blue: var(--aiforge-terminal-blue);
+  --aiforge-elements-terminal-color-magenta: var(--aiforge-terminal-magenta);
+  --aiforge-elements-terminal-color-cyan: var(--aiforge-terminal-cyan);
+  --aiforge-elements-terminal-color-white: var(--aiforge-terminal-white);
+  --aiforge-elements-terminal-color-brightBlack: var(--aiforge-terminal-brightBlack);
+  --aiforge-elements-terminal-color-brightRed: var(--aiforge-terminal-brightRed);
+  --aiforge-elements-terminal-color-brightGreen: var(--aiforge-terminal-brightGreen);
+  --aiforge-elements-terminal-color-brightYellow: var(--aiforge-terminal-brightYellow);
+  --aiforge-elements-terminal-color-brightBlue: var(--aiforge-terminal-brightBlue);
+  --aiforge-elements-terminal-color-brightMagenta: var(--aiforge-terminal-brightMagenta);
+  --aiforge-elements-terminal-color-brightCyan: var(--aiforge-terminal-brightCyan);
+  --aiforge-elements-terminal-color-brightWhite: var(--aiforge-terminal-brightWhite);
+}

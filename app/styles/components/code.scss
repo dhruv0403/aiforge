@@ -1,0 +1,9 @@
+.actions .shiki {
+  background-color: var(--aiforge-elements-actions-code-background) !important;
+}
+
+.shiki {
+  &:not(:has(.actions), .actions *) {
+    background-color: var(--aiforge-elements-messages-code-background) !important;
+  }
+}

@@ -1,0 +1,17 @@
+.Toastify__toast {
+  --at-apply: shadow-md;
+
+  background-color: var(--aiforge-elements-bg-depth-2);
+  color: var(--aiforge-elements-textPrimary);
+  border: 1px solid var(--aiforge-elements-borderColor);
+}
+
+.Toastify__close-button {
+  color: var(--aiforge-elements-item-contentDefault);
+  opacity: 1;
+  transition: none;
+
+  &:hover {
+    color: var(--aiforge-elements-item-contentActive);
+  }
+}
