@@ -4,8 +4,8 @@ export const WORK_DIR_NAME = 'project';
 export const WORK_DIR = `/home/${WORK_DIR_NAME}`;
 export const MODIFICATIONS_TAG_NAME = 'aiforge_file_modifications';
 export const MODEL_REGEX = /^\[Model: (.*?)\]\n\n/;
-export const DEFAULT_MODEL = 'claude-3-5-sonnet-20240620';
-export const DEFAULT_PROVIDER = 'Anthropic';
+export const DEFAULT_MODEL = 'Gemini 1.5 Pro';
+export const DEFAULT_PROVIDER = 'Google';
 
 const staticModels: ModelInfo[] = [
   { name: 'claude-3-5-sonnet-20240620', label: 'Claude 3.5 Sonnet', provider: 'Anthropic' },
