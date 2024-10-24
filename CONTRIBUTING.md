@@ -28,9 +28,6 @@ This project and everyone participating in it is governed by our Code of Conduct
 3. Write your code
 4. Submit a pull request
 
-### ✨ Becoming a Core Contributor
-We're looking for dedicated contributors to help maintain and grow this project. If you're interested in becoming a core contributor, please fill out our [Contributor Application Form](https://forms.gle/TBSteXSDCtBDwr5m7).
-
 ## Pull Request Guidelines
 
 ### 📝 PR Checklist
