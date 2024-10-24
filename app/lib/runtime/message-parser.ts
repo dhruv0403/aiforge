@@ -1,5 +1,5 @@
-import type { ActionType, AiForgeAction, AiForgeActionData, FileAction, ShellAction } from '~/types/actions';
-import type { AiForgeArtifactData } from '~/types/artifact';
+import type { ActionType, AiforgeAction, AiforgeActionData, FileAction, ShellAction } from '~/types/actions';
+import type { AiforgeArtifactData } from '~/types/artifact';
 import { createScopedLogger } from '~/utils/logger';
 import { unreachable } from '~/utils/unreachable';
 
@@ -10,7 +10,7 @@ const ARTIFACT_ACTION_TAG_CLOSE = '</aiforgeAction>';
 
 const logger = createScopedLogger('MessageParser');
 
-export interface ArtifactCallbackData extends AiForgeArtifactData {
+export interface ArtifactCallbackData extends AiforgeArtifactData {
   messageId: string;
 }
 
@@ -18,7 +18,7 @@ export interface ActionCallbackData {
   artifactId: string;
   messageId: string;
   actionId: string;
-  action: AiForgeAction;
+  action: AiforgeAction;
 }
 
 export type ArtifactCallback = (data: ArtifactCallbackData) => void;
@@ -46,8 +46,8 @@ interface MessageState {
   position: number;
   insideArtifact: boolean;
   insideAction: boolean;
-  currentArtifact?: AiForgeArtifactData;
-  currentAction: AiForgeActionData;
+  currentArtifact?: AiforgeArtifactData;
+  currentAction: AiforgeActionData;
   actionId: number;
 }
 
@@ -110,7 +110,7 @@ export class StreamingMessageParser {
                */
               actionId: String(state.actionId - 1),
 
-              action: currentAction as AiForgeAction,
+              action: currentAction as AiforgeAction,
             });
 
             state.insideAction = false;
@@ -136,7 +136,7 @@ export class StreamingMessageParser {
                 artifactId: currentArtifact.id,
                 messageId,
                 actionId: String(state.actionId++),
-                action: state.currentAction as AiForgeAction,
+                action: state.currentAction as AiforgeAction,
               });
 
               i = actionEndIndex + 1;
@@ -191,7 +191,7 @@ export class StreamingMessageParser {
               const currentArtifact = {
                 id: artifactId,
                 title: artifactTitle,
-              } satisfies AiForgeArtifactData;
+              } satisfies AiforgeArtifactData;
 
               state.currentArtifact = currentArtifact;
 

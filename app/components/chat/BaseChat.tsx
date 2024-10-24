@@ -22,7 +22,7 @@ const EXAMPLE_PROMPTS = [
   { text: 'How do I center a div?' },
 ];
 
-const providerList = [...new Set(MODEL_LIST.map((model) => model.provider))];
+const providerList = [...new Set(MODEL_LIST.map((model) => model.provider))]
 
 const ModelSelector = ({ model, setModel, modelList, providerList }) => {
   const [provider, setProvider] = useState(DEFAULT_PROVIDER);
@@ -32,7 +32,7 @@ const ModelSelector = ({ model, setModel, modelList, providerList }) => {
         value={provider}
         onChange={(e) => {
           setProvider(e.target.value);
-          const firstModel = [...modelList].find((m) => m.provider == e.target.value);
+          const firstModel = [...modelList].find(m => m.provider == e.target.value);
           setModel(firstModel ? firstModel.name : '');
         }}
         className="w-full p-2 rounded-lg border border-aiforge-elements-borderColor bg-aiforge-elements-prompt-background text-aiforge-elements-textPrimary focus:outline-none"
@@ -45,19 +45,20 @@ const ModelSelector = ({ model, setModel, modelList, providerList }) => {
         <option key="Ollama" value="Ollama">
           Ollama
         </option>
+        <option key="OpenAILike" value="OpenAILike">
+          OpenAILike
+        </option>
       </select>
       <select
         value={model}
         onChange={(e) => setModel(e.target.value)}
         className="w-full p-2 rounded-lg border border-aiforge-elements-borderColor bg-aiforge-elements-prompt-background text-aiforge-elements-textPrimary focus:outline-none"
       >
-        {[...modelList]
-          .filter((e) => e.provider == provider && e.name)
-          .map((modelOption) => (
-            <option key={modelOption.name} value={modelOption.name}>
-              {modelOption.label}
-            </option>
-          ))}
+        {[...modelList].filter(e => e.provider == provider && e.name).map((modelOption) => (
+          <option key={modelOption.name} value={modelOption.name}>
+            {modelOption.label}
+          </option>
+        ))}
       </select>
     </div>
   );
@@ -118,7 +119,7 @@ export const BaseChat = React.forwardRef<HTMLDivElement, BaseChatProps>(
         data-chat-visible={showChat}
       >
         <ClientOnly>{() => <Menu />}</ClientOnly>
-        <div ref={scrollRef} className="flex overflow-scroll w-full h-full">
+        <div ref={scrollRef} className="flex overflow-y-auto w-full h-full">
           <div className={classNames(styles.Chat, 'flex flex-col flex-grow min-w-[var(--chat-min-width)] h-full')}>
             {!chatStarted && (
               <div id="intro" className="mt-[26vh] max-w-chat mx-auto">
@@ -152,7 +153,12 @@ export const BaseChat = React.forwardRef<HTMLDivElement, BaseChatProps>(
                   'sticky bottom-0': chatStarted,
                 })}
               >
-                <ModelSelector model={model} setModel={setModel} modelList={MODEL_LIST} providerList={providerList} />
+                <ModelSelector
+                  model={model}
+                  setModel={setModel}
+                  modelList={MODEL_LIST}
+                  providerList={providerList}
+                />
                 <div
                   className={classNames(
                     'shadow-sm border border-aiforge-elements-borderColor bg-aiforge-elements-prompt-background backdrop-filter backdrop-blur-[8px] rounded-lg overflow-hidden',
@@ -180,7 +186,7 @@ export const BaseChat = React.forwardRef<HTMLDivElement, BaseChatProps>(
                       minHeight: TEXTAREA_MIN_HEIGHT,
                       maxHeight: TEXTAREA_MAX_HEIGHT,
                     }}
-                    placeholder="How can AiForge help you today?"
+                    placeholder="How can Aiforge help you today?"
                     translate="no"
                   />
                   <ClientOnly>

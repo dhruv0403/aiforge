@@ -6,7 +6,8 @@ body:
       value: |
         Thank you for reporting an issue :pray:.
 
-        This issue tracker is for bugs and issues found with [AIForge](https://aiforge.gorlabs.com).
+        This issue tracker is for bugs and issues found with [Aiforge](https://aiforge).
+        If you experience issues related to WebContainer, please file an issue in our [WebContainer repo](https://github.com/gorlabs/webcontainer-core), or file an issue in our [Gorlabs core repo](https://github.com/gorlabs/core) for issues with Gorlabs.
 
         The more information you fill in, the better we can help you.
   - type: textarea
@@ -19,7 +20,7 @@ body:
   - type: input
     id: link
     attributes:
-      label: Link to the AiForge URL that caused the error
+      label: Link to the Aiforge URL that caused the error
       description: Please do not delete it after reporting!
     validations:
       required: true

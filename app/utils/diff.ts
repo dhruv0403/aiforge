@@ -84,7 +84,7 @@ export function diffFiles(fileName: string, oldFileContent: string, newFileConte
  * <aiforge_file_modifications>
  * <diff path="/home/project/index.js">
  * - console.log('Hello, World!');
- * + console.log('Hello, AiForge!');
+ * + console.log('Hello, Aiforge!');
  * </diff>
  * </aiforge_file_modifications>
  * ```

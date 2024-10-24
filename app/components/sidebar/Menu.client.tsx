@@ -120,9 +120,7 @@ export function Menu() {
         </div>
         <div className="text-aiforge-elements-textPrimary font-medium pl-6 pr-5 my-2">Your Chats</div>
         <div className="flex-1 overflow-scroll pl-4 pr-5 pb-5">
-          {list.length === 0 && (
-            <div className="pl-2 text-aiforge-elements-textTertiary">No previous conversations</div>
-          )}
+          {list.length === 0 && <div className="pl-2 text-aiforge-elements-textTertiary">No previous conversations</div>}
           <DialogRoot open={dialogContent !== null}>
             {binDates(list).map(({ category, items }) => (
               <div key={category} className="mt-4 first:mt-0 space-y-1">

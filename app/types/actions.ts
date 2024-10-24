@@ -13,6 +13,6 @@ export interface ShellAction extends BaseAction {
   type: 'shell';
 }
 
-export type AiForgeAction = FileAction | ShellAction;
+export type AiforgeAction = FileAction | ShellAction;
 
-export type AiForgeActionData = AiForgeAction | BaseAction;
+export type AiforgeActionData = AiforgeAction | BaseAction;

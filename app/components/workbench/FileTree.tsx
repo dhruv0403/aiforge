@@ -190,8 +190,7 @@ function File({ file: { depth, name }, onClick, selected, unsavedChanges = false
   return (
     <NodeButton
       className={classNames('group', {
-        'bg-transparent hover:bg-aiforge-elements-item-backgroundActive text-aiforge-elements-item-contentDefault':
-          !selected,
+        'bg-transparent hover:bg-aiforge-elements-item-backgroundActive text-aiforge-elements-item-contentDefault': !selected,
         'bg-aiforge-elements-item-backgroundAccent text-aiforge-elements-item-contentAccent': selected,
       })}
       depth={depth}

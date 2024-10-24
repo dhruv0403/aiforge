@@ -6,10 +6,7 @@
 
   --cm-gutter-backgroundColor: var(--aiforge-elements-editor-gutter-backgroundColor, var(--cm-backgroundColor));
   --cm-gutter-textColor: var(--aiforge-elements-editor-gutter-textColor, var(--aiforge-elements-textSecondary));
-  --cm-gutter-activeLineTextColor: var(
-    --aiforge-elements-editor-gutter-activeLineTextColor,
-    var(--cm-gutter-textColor)
-  );
+  --cm-gutter-activeLineTextColor: var(--aiforge-elements-editor-gutter-activeLineTextColor, var(--cm-gutter-textColor));
 
   /* Fold Gutter */
 
@@ -44,10 +41,7 @@
 
   --cm-search-backgroundColor: var(--aiforge-elements-editor-search-backgroundColor, var(--cm-backgroundColor));
   --cm-search-textColor: var(--aiforge-elements-editor-search-textColor, var(--aiforge-elements-textSecondary));
-  --cm-search-closeButton-backgroundColor: var(
-    --aiforge-elements-editor-search-closeButton-backgroundColor,
-    transparent
-  );
+  --cm-search-closeButton-backgroundColor: var(--aiforge-elements-editor-search-closeButton-backgroundColor, transparent);
 
   --cm-search-closeButton-backgroundColorHover: var(
     --aiforge-elements-editor-search-closeButton-backgroundColorHover,
@@ -74,10 +68,7 @@
     var(--aiforge-elements-item-backgroundActive)
   );
 
-  --cm-search-button-textColor: var(
-    --aiforge-elements-editor-search-button-textColor,
-    var(--aiforge-elements-textSecondary)
-  );
+  --cm-search-button-textColor: var(--aiforge-elements-editor-search-button-textColor, var(--aiforge-elements-textSecondary));
 
   --cm-search-button-textColorHover: var(
     --aiforge-elements-editor-search-button-textColorHover,
@@ -93,14 +84,8 @@
   );
 
   --cm-search-input-backgroundColor: var(--aiforge-elements-editor-search-input-backgroundColor, transparent);
-  --cm-search-input-textColor: var(
-    --aiforge-elements-editor-search-input-textColor,
-    var(--aiforge-elements-textPrimary)
-  );
-  --cm-search-input-borderColor: var(
-    --aiforge-elements-editor-search-input-borderColor,
-    var(--aiforge-elements-borderColor)
-  );
+  --cm-search-input-textColor: var(--aiforge-elements-editor-search-input-textColor, var(--aiforge-elements-textPrimary));
+  --cm-search-input-borderColor: var(--aiforge-elements-editor-search-input-borderColor, var(--aiforge-elements-borderColor));
 
   --cm-search-input-borderColorFocused: var(
     --aiforge-elements-editor-search-input-borderColorFocused,
