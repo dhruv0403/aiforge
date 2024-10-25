@@ -4,7 +4,7 @@ export const WORK_DIR_NAME = 'project';
 export const WORK_DIR = `/home/${WORK_DIR_NAME}`;
 export const MODIFICATIONS_TAG_NAME = 'aiforge_file_modifications';
 export const MODEL_REGEX = /^\[Model: (.*?)\]\n\n/;
-export const DEFAULT_MODEL = 'Gemini 1.5 Pro';
+export const DEFAULT_MODEL = 'gemini-1.5-flash-latest';
 export const DEFAULT_PROVIDER = 'Google';
 
 const staticModels: ModelInfo[] = [
