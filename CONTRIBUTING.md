@@ -55,7 +55,7 @@ This project and everyone participating in it is governed by our Code of Conduct
 ### 🔄 Initial Setup
 1. Clone the repository:
 ```bash
-git clone https://github.com/gauravmandall/aiforge.git
+git clone https://github.com/dhruv0403/aiforge.git
 ```
 
 2. Install dependencies:
